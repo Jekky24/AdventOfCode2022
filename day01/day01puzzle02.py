@@ -18,4 +18,5 @@ for i in input_list:
         totals.append(combined_calories)
         combined_calories = 0
 
-print(max(totals))
+totals.sort(reverse=True)
+print(totals[0] + totals[1] + totals[2])
