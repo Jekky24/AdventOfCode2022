@@ -11,7 +11,8 @@ input_list = [l.strip() for l in lines]
 # Initialise score at 0
 score = 0
 
-# Lists all the potential scenarios and the points gained for each
+# Lists all the potential scenarios and the points gained for each as a
+# dictionary, so the scenarios can be looked up later
 # Opponent plays: A Rock, B Paper, C Scissors
 # X Lose (+0), Y Draw (+3), Z Win (+6)
 # Extra points for option selected: Rock (+1), Paper (+2), Scissors (+3)
@@ -30,6 +31,7 @@ scenarios = {
 # Loop through input_list and tally scores gained based on scenario
 for i in input_list:
 
+    # Adds to the score by looking up the scenario dictionary
     score += scenarios[i]
 
 # Print the final score
