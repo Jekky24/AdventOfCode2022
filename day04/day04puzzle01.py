@@ -1,5 +1,5 @@
 # Imports
-import re
+import re   # Regular expression
 
 # Import the .txt input file and save it as a file
 with open("input_day04.txt") as f:
