@@ -37,3 +37,4 @@ for i in input_list:
 
 # Print the final duplicates score
 print(duplicates)
+#
